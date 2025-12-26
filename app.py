@@ -4,11 +4,11 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 st.set_page_config(page_title="Rainfall Prediction", layout="centered")
-st.title("Rainfall Prediction System")
-st.write("Rainfall Prediction Project")
+st.title("🌧️Rainfall Prediction System")
+st.write("🌧️Rainfall Prediction Project")
 
 data = []
-states = ["Maharashtra", "Kerala", "Tamil Nadu", "Rajasthan", "Punjab"]
+states = ["Maharashtra", "Kerala", "Tamil Nadu", "Rajasthan", "Uttarakhand"]
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]
 for state in states:
     for month_index, month in enumerate(months):
@@ -64,5 +64,7 @@ if st.button("Predict rainfall"):
     st.success(f"Predicted Rainfall: {prediction:.2f} mm")
 
 st.write("---")
-st.caption("DAIVASHREE BHOSEKAR | Synthetic India Climate Data | Linear Regression")
+st.caption("Shifa Parveen | Synthetic India Climate Data | Linear Regression")
+
+
 
